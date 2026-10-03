@@ -49,7 +49,7 @@ Payload schema changes should be made through migrations. Use `npm run payload:m
 
 Run `npm run seed` after the schema has been applied. It imports the bundled package descriptions and itineraries, seven dedicated destination pages plus the separately flagged Phobjikha Valley mention, six static pages, FAQs, team records, testimonials, Site Settings, and local editorial images. It does not import any passwords, customer data, Stripe records, or blog posts.
 
-All package, destination, blog, and homepage imagery can be replaced through Media and the relevant relationship fields in Payload. The owner-supplied logo is expected at `/public/logo.png`; Site Settings already references `/logo.png`. Add the file before seeding if it should also be added to the Media library, or upload it in Payload and set the Site Settings logo relation.
+All package, destination, blog, and homepage imagery can be replaced through Media and the relevant relationship fields in Payload. The owner-provided logo is included at `/public/logo.png`; Site Settings references `/logo.png`, and the seed script adds it to Media. Replace it in Payload whenever a new logo is ready.
 
 ## 4. Booking and Stripe
 
