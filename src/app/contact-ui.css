@@ -1,0 +1,48 @@
+.honeypot { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.form-small { margin: -5px 0 0; color: #859087; font-size: 10px; }
+.form-small a { color: var(--pine); text-decoration: underline; }
+.form-small span { margin: 0 4px; color: #aab3aa; }
+.form-hint { color: #869087; font-size: 10px; }
+.form-shell > .eyebrow { margin-bottom: 12px; }
+.empty-state { max-width: 660px; margin: 10px auto; padding: 50px 45px; background: var(--sand); text-align: center; }
+.empty-state h2 { margin: 0; color: var(--pine); font-family: var(--serif); font-size: 37px; font-weight: 400; }
+.empty-state p { color: #6e7b72; font-size: 13px; line-height: 1.8; }
+.empty-state .button { margin-top: 14px; }
+.empty-state.account-empty { margin-top: 15px; }
+.faq-help { margin-top: 30px; color: #728077; font-size: 12px; }
+.rich-content { color: #56665c; font-size: 14px; line-height: 1.9; }
+.rich-content h2 { margin: 35px 0 13px; color: var(--pine); font-family: var(--serif); font-size: 33px; font-weight: 400; }
+.rich-content h3 { color: var(--pine); font-family: var(--serif); font-weight: 400; }
+.rich-content blockquote { margin: 25px 0; padding: 10px 22px; border-left: 2px solid var(--clay); color: var(--pine); font-family: var(--serif); font-size: 23px; }
+.rich-content ul, .rich-content ol { padding-left: 22px; }
+.rich-content li { padding: 4px 0; }
+.faq-answer p { margin: 0 0 10px; }
+.plain-text h2 { margin: 32px 0 13px; color: var(--pine); font-family: var(--serif); font-size: 30px; font-weight: 400; }
+.account-logout { padding: 9px 10px; border: 0; background: transparent; text-align: left; color: #5f6e64; font: inherit; font-size: 12px; cursor: pointer; }
+.account-logout:hover { color: var(--clay); }
+.account-section > h2, .account-profile > h2 { margin: 0 0 17px; color: var(--pine); font-family: var(--serif); font-size: 32px; font-weight: 400; }
+.account-profile { margin-top: 52px; }
+.account-profile .form-card { box-shadow: none; border: 1px solid #e7e9e2; }
+.booking-notice { margin-bottom: 22px; padding: 14px 16px; background: #f5f2ea; color: #59675e; font-size: 12px; line-height: 1.75; }
+.booking-notice strong { color: var(--pine); }
+.stripe-notice { color: #7b877e; font-size: 10px; line-height: 1.6; }
+.booking-layout { display: block; }
+.booking-form-area { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 30px; align-items: start; }
+.booking-form-area .form-card { box-shadow: none; border: 1px solid #e7e9e2; }
+.auth-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.consent-row { display: flex; align-items: flex-start; gap: 10px; color: #637067; font-size: 11px; }
+.consent-row input { accent-color: var(--pine); margin-top: 4px; }
+.consent-row a { color: var(--pine); text-decoration: underline; }
+.checkout-return { max-width: 720px; margin: 0 auto; padding: 85px 0 110px; }
+.checkout-return h1 { margin: 0; color: var(--pine); font-family: var(--serif); font-size: clamp(43px, 7vw, 75px); font-weight: 400; letter-spacing: -.05em; line-height: 1; }
+.checkout-return p:not(.eyebrow) { max-width: 590px; color: #66736a; font-size: 14px; line-height: 1.8; }
+.checkout-return .button { margin-top: 14px; }
+.booking-choices { display: grid; max-width: 850px; margin: 0 auto; border-top: 1px solid var(--line); }
+.booking-choice { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 18px 5px; border-bottom: 1px solid var(--line); color: var(--pine); }
+.booking-choice strong, .booking-choice small { display: block; }
+.booking-choice strong { font-family: var(--serif); font-size: 22px; font-weight: 400; }
+.booking-choice small { color: #78837a; font-size: 11px; }
+.booking-choice:hover { color: var(--clay); }
+.source-note { margin-top: 40px; color: #89928a; font-size: 10px; }
+.source-note a { text-decoration: underline; }
+@media (max-width: 760px) { .booking-form-area { grid-template-columns: 1fr; } .booking-summary { position: static; order: -1; } .account-layout { grid-template-columns: 1fr; } }

@@ -1,0 +1,52 @@
+{
+  "name": "gih-tour-and-travel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "node src/scripts/payload-cli.mjs generate:importmap && node src/scripts/payload-cli.mjs generate:types && next build",
+    "start": "next start --hostname 0.0.0.0",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "seed": "tsx src/scripts/seed.ts",
+    "payload:migrate": "node src/scripts/payload-cli.mjs migrate",
+    "payload:migrate:create": "node src/scripts/payload-cli.mjs migrate:create",
+    "payload:generate:types": "node src/scripts/payload-cli.mjs generate:types",
+    "payload:generate:importmap": "node src/scripts/payload-cli.mjs generate:importmap"
+  },
+  "dependencies": {
+    "@payloadcms/db-vercel-postgres": "^3.83.0",
+    "@payloadcms/email-resend": "^3.83.0",
+    "@payloadcms/next": "^3.83.0",
+    "@payloadcms/richtext-lexical": "^3.83.0",
+    "@payloadcms/storage-vercel-blob": "^3.83.0",
+    "dotenv": "^16.6.1",
+    "lucide-react": "^0.468.0",
+    "next": "^16.3.8",
+    "payload": "^3.83.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "resend": "^6.0.0",
+    "sharp": "^0.35.5",
+    "stripe": "^18.5.0"
+  },
+  "overrides": {
+    "undici": "7.29.1",
+    "dompurify": "3.4.16",
+    "sass": "1.105.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "^16.3.8",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
