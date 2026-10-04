@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.env
+.env.*
+!.env.example
+.vercel/
+public/media/*
+!public/media/.gitkeep
+*.tsbuildinfo
+*.log
+.DS_Store
