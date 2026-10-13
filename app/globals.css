@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Base styles — GIH Tour and Travel
+ * Typography: Playfair Display (headings) + Inter (body), loaded via
+ * Google Fonts <link> in app/layout.tsx (see README "Fonts" note).
+ */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-cream font-sans text-charcoal;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Visible keyboard focus everywhere */
+  :focus-visible {
+    outline: 2px solid theme('colors.ochre.DEFAULT');
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: theme('colors.ochre.100');
+    color: theme('colors.charcoal');
+  }
+}
+
+@layer components {
+  .prose-measure {
+    max-width: 42rem;
+  }
+
+  /* Skip link */
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-himalaya-600 focus:px-6 focus:py-3 focus:text-white;
+  }
+}
